@@ -1,3 +1,9 @@
+body {
+  background: url("https://olc-wordpress-assets.s3.amazonaws.com/uploads/2020/07/Global-double-laptops-partnership.jpeg");
+  background-size:contain;
+  background-position:center;
+  background: cover;
+}
 .App {
   text-align: center;
 }
@@ -36,3 +42,16 @@
     transform: rotate(360deg);
   }
 }
+
+.image{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: sticky;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+    filter: brightness(1.2); /* 1 is the default value, increase to lighten */
+
+}
+

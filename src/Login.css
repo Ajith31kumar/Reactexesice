@@ -1,4 +1,12 @@
-.login-container {
+body {
+    background: url("https://olc-wordpress-assets.s3.amazonaws.com/uploads/2020/07/Global-double-laptops-partnership.jpeg");
+    background-size:contain;
+    background-position:center;
+    background: cover;
+  }
+  
+
+  .login-container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -10,7 +18,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
