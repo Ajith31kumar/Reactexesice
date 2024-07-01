@@ -15,14 +15,14 @@ const ParticlesComponent = (props) => {
     console.log("Particles loaded:", container);
   };
 
-  // Memoized options for particles configuration
+ 
   const options = useMemo(() => ({
     background: {
       image: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvB0L6eA4mpRpDQUusysRvTl6C3jCEtFQCYA&s)',
       position: "50% 50%",
       repeat: "no-repeat",
       size: "cover",
-      color: { value: "#333333" }, // Darker background color
+      color: { value: "#333333" }, 
     },
     fpsLimit: 120,
     interactivity: {
@@ -47,7 +47,7 @@ const ParticlesComponent = (props) => {
     detectRetina: true,
   }), []);
 
-  // Render Particles component with options and particleLoaded callback
+ 
   return (
     <Particles id={props.id} init={particlesLoaded} options={options} />
   );
